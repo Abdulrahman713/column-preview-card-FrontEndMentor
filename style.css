@@ -1,0 +1,116 @@
+/* Start Varubals */
+:root {
+    --bghdbt-color: hsl(0, 0%, 95%);
+    --pargrahs-color: hsla(0, 0%, 100%, 0.75);
+    --Brightorange-color: hsl(31, 77%, 52%);
+    --Darkcyan-color: hsl(184, 100%, 22%);
+    --Verydarkcyan-color: hsl(179, 100%, 13%);
+    --mainpadding-padding: 40px;
+}
+/* End Varubals */
+/* Start Global Values */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+body {
+    background-color: var(--bghdbt-color);
+}
+p {
+    font-size: 15px;
+    color: var(--pargrahs-color);
+    width: 200px;
+}
+h1 {
+    color: var(--bghdbt-color);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+button {
+    margin-top: 90px;
+    padding: 13px;
+    border-radius: 25px;
+    background-color: var(--bghdbt-color);
+    border: none;
+    outline: none;
+    width: 130px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+button:active {
+    background-color: transparent;
+    color: var(--bghdbt-color) !important;
+    border: 2px solid var(--bghdbt-color);
+}
+/* End Global Values */
+/* Start Media Quries */
+@media (max-width: 800px) {
+    .parent {
+        width: 300px !important;
+        flex-wrap: wrap;
+        z-index: 99999;
+        transform: translate(-50%, 0) !important;
+        right: 0 !important;
+        top: 0 !important;
+        z-index: 9999 !important;
+        margin-top: 20px;
+    }
+    .FirstCard,
+    .SecondCard,
+    .ThirdCard {
+        width: 100% !important;
+    }
+}
+/* End Media Quries */
+/* Start Parent of Cards & Cards */
+.parent {
+    width: 820px;
+    height: 440px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    border-radius: 5px;
+}
+/* Start First Card */
+.parent .FirstCard {
+    width: calc(100% / 3);
+    height: 100%;
+    background-color: var(--Brightorange-color);
+    padding: var(--mainpadding-padding);
+    border-radius: 5px 0 0 5px;
+}
+.parent .FirstCard button {
+    color: var(--Brightorange-color);
+}
+/* End First Card */
+/* Start Second Card */
+.parent .SecondCard {
+    width: calc(100% / 3);
+    height: 100%;
+    background-color: var(--Darkcyan-color);
+    padding: var(--mainpadding-padding);
+}
+.parent .SecondCard button {
+    color: var(--Darkcyan-color);
+}
+/* End Second Card */
+/* Start Third Card */
+.parent .ThirdCard {
+    width: calc(100% / 3);
+    height: 100%;
+    background-color: var(--Verydarkcyan-color);
+    padding: var(--mainpadding-padding);
+    border-radius: 0 5px 5px 0;
+}
+.parent .ThirdCard button {
+    color: var(--Verydarkcyan-color);
+}
+/* End Third Card */
+/* End Parent of Cards & Cards */
