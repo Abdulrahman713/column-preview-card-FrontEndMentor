@@ -27,12 +27,12 @@ p {
 h1 {
     color: var(--bghdbt-color);
     font-family: 'Big Shoulders Display', cursive;
-    font-size: 35px;
+    font-size: 40px;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 button {
-    margin-top: 90px;
+    margin-top: 105px;
     padding: 13px;
     border-radius: 25px;
     background-color: var(--bghdbt-color);
@@ -70,7 +70,7 @@ button:active {
 /* Start Parent of Cards & Cards */
 .parent {
     width: 820px;
-    height: 440px;
+    height: 475px;
     position: absolute;
     left: 50%;
     top: 50%;
